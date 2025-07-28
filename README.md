@@ -1,6 +1,6 @@
 # 🛍️ ShoppyGlobe
 
-**ShoppyGlobe** is a modern, beginner-friendly e-commerce web application built with **ReactJS**, powered by real product data from a public API. It features product listing, category filtering, cart management via Redux, and a beautiful Zen Z-inspired UI design.
+**ShoppyGlobe** is a modern, beginner-friendly e-commerce web application built with **ReactJS**, powered by real product data from a public API. It features product listing, category filtering, cart management via Redux.
 
 ---
 
