@@ -1,0 +1,31 @@
+/* src/components/NotFound.css */
+
+.not-found {
+  text-align: center;
+  padding: 5rem 2rem;
+  background-color: #fefefe;
+}
+
+.not-found h1 {
+  font-size: 6rem;
+  color: #ff3333;
+  margin-bottom: 1rem;
+}
+
+.not-found p {
+  font-size: 1.3rem;
+}
+
+.home-link {
+  margin-top: 1.5rem;
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #00aaff;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.home-link:hover {
+  background-color: #008ecc;
+}

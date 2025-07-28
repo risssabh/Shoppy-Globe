@@ -1,0 +1,125 @@
+/* src/components/Header.css */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+  padding: 1rem 1.5rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Logo (left) */
+.nav-left .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00aaff;
+  text-decoration: none;
+}
+
+/* Center navigation (Home, categories, search) */
+.nav-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  flex: 1;
+  transition: all 0.3s ease;
+}
+
+.nav-link {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #444;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.nav-link:hover {
+  color: #00aaff;
+}
+
+/* Search bar */
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-form input {
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 0.95rem;
+}
+
+/* Right side: cart + hamburger */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.cart-icon {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #00aaff;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #333;
+  background: none;
+  border: none;
+}
+
+/* Mobile & Tablet Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav-left,
+  .nav-right {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-center {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+  }
+
+  .nav-center.open {
+    display: flex;
+  }
+
+  .search-form input {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
